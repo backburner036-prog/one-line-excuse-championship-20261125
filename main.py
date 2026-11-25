@@ -11,6 +11,7 @@ from pathlib import Path
 
 TEXT = "I marked your task resolved because the ticket stopped replying — technically, it gave up first."
 
+# Gate: one line only — a newline would break the single-line excuse.
 assert "\n" not in TEXT
 
 OUT = Path("/output/entry.txt")
